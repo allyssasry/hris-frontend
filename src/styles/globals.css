@@ -1,0 +1,71 @@
+/* ===============================
+   GLOBAL STYLES HRIS (INTER FONT)
+   =============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-sans);
+  background-color: rgb(var(--bg-light));
+  color: rgb(var(--neutral-900));
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar HRIS aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 58, 95, 0.4); /* brand blue */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(30, 58, 95, 0.6);
+}
+
+/* Links */
+a {
+  color: rgb(var(--brand));
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: rgb(var(--brand-accent));
+}
+
+/* Buttons reset (nanti override via Tailwind) */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Card shadow class util (non-Tailwind) */
+.card-shadow {
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-md);
+}
+
+/* Smooth animation defaults */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Responsive text sizing defaults */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: rgb(var(--brand));
+}
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.875rem; }
+h3 { font-size: 1.5rem; }
+p {
+  color: rgb(var(--neutral-700));
+  line-height: 1.6;
+}

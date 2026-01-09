@@ -1,0 +1,101 @@
+.setup-company-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 48px 80px;
+}
+
+/* LEFT */
+.setup-company-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.setup-company-left img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* RIGHT */
+.setup-company-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 64px;
+}
+
+.setup-company-right h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.setup-company-right form {
+  max-width: 420px;
+}
+
+.setup-company-right label {
+  font-size: 12px;
+  color: #444;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.setup-company-right input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.setup-company-right input:focus {
+  outline: none;
+  border-color: #1f3a5f;
+}
+
+.setup-company-right button {
+  width: 100%;
+  padding: 14px;
+  background-color: #1f3a5f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.setup-company-right button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .setup-company-container {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .setup-company-right {
+    padding-left: 0;
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  .setup-company-right form {
+    margin: 0 auto;
+  }
+}

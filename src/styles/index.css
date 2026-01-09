@@ -1,0 +1,5 @@
+/* src/styles/index.css */
+@import "./theme.css";
+@import "./globals.css";
+@import "tailwindcss";
+
